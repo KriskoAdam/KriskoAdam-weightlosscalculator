@@ -1,11 +1,11 @@
 import React, { useContext } from 'react';
 import "../Fonts/Fonts.css";
-import { LanguageContext } from './LanguageContext'; // Import LanguageContext
+import { LanguageContext } from './LanguageContext'; 
 
 const InfoContainer = () => {
-  const { language } = useContext(LanguageContext); // Získanie aktuálneho jazyka z kontextu
+  const { language } = useContext(LanguageContext); 
 
-  // Preklady pre podporované jazyky
+ 
   const translations = {
     en: {
       welcome: 'Welcome',
@@ -23,10 +23,10 @@ const InfoContainer = () => {
     <div className="flex items-center justify-center p-4">
       <div className="w-full max-w-4xl bg-sky-500 bg-clip-padding backdrop-filter backdrop-blur bg-opacity-10 backdrop-saturate-100 backdrop-contrast-100 rounded-lg shadow-lg p-6">
         <h2 className="text-center text-2xl md:text-3xl font-semibold font-poppins text-black">
-          {translations[language].welcome} {/* Dynamický nadpis */}
+          {translations[language].welcome} 
         </h2>
         <p className="mt-4 text-base sm:text-lg md:text-xl text-black">
-          {translations[language].description} {/* Dynamický text */}
+          {translations[language].description} 
         </p>
       </div>
     </div>

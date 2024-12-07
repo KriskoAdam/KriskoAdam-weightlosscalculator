@@ -1,12 +1,12 @@
 import React, { createContext, useState } from 'react';
 
-// Vytvorenie kontextu
+
 export const LanguageContext = createContext();
 
 export const LanguageProvider = ({ children }) => {
-  const [language, setLanguage] = useState('en'); // Predvolený jazyk je angličtina
+  const [language, setLanguage] = useState('en'); 
 
-  const changeLanguage = (lang) => setLanguage(lang); // Funkcia na zmenu jazyka
+  const changeLanguage = (lang) => setLanguage(lang); 
 
   return (
     <LanguageContext.Provider value={{ language, changeLanguage }}>

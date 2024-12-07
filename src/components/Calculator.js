@@ -4,10 +4,10 @@ import { ReactComponent as Female } from '../Icons/female.svg';
 import DatePicker from "react-datepicker";
 import "react-datepicker/dist/react-datepicker.css"; 
 import moment from 'moment';
-import { LanguageContext } from './LanguageContext'; // Import LanguageContext
+import { LanguageContext } from './LanguageContext'; 
 
 const Calculator = () => {
-  const { language } = useContext(LanguageContext); // Získanie aktuálneho jazyka
+  const { language } = useContext(LanguageContext);
   const [selectedGender, setSelectedGender] = useState(null);
   const [height, setHeight] = useState('');
   const [weight, setWeight] = useState('');
@@ -50,7 +50,7 @@ const Calculator = () => {
     },
   };
 
-  const t = translations[language]; // Preklady pre aktuálny jazyk
+  const t = translations[language]; 
 
   const handleButtonClick = (gender) => {
     setSelectedGender(gender);
