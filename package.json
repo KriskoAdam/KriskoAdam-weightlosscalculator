@@ -2,7 +2,7 @@
   "name": "weightloss-calculator",
   "version": "1.0.0",
   "private": true,
-  "homepage": "https://kriskoadam.github.io/weightlosscalculator.github.io/",
+  "homepage": "https://kriskoadam.github.io/KriskoAdam-weightlosscalculator",
   "devDependencies": {
     "autoprefixer": "^10.4.20",
     "gh-pages": "^6.2.0",
