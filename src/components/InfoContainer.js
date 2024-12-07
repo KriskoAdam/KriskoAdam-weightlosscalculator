@@ -20,13 +20,15 @@ const InfoContainer = () => {
   };
 
   return (
-    <div className="flex items-center justify-center ">
-    <div className="w-2/4 bg-sky-500 bg-clip-padding backdrop-filter backdrop-blur bg-opacity-10 backdrop-saturate-100 backdrop-contrast-100 rounded-lg m-8 p-6">
-      <h2 className="text-center text-2xl font-semibold font-poppins">
-        {translations[language].welcome} {/* Dynamický nadpis */}
-      </h2>
-      <p>{translations[language].description} {/* Dynamický text */}</p>
-    </div>
+    <div className="flex items-center justify-center p-4">
+      <div className="w-full max-w-4xl bg-sky-500 bg-clip-padding backdrop-filter backdrop-blur bg-opacity-10 backdrop-saturate-100 backdrop-contrast-100 rounded-lg shadow-lg p-6">
+        <h2 className="text-center text-2xl md:text-3xl font-semibold font-poppins text-black">
+          {translations[language].welcome} {/* Dynamický nadpis */}
+        </h2>
+        <p className="mt-4 text-base sm:text-lg md:text-xl text-black">
+          {translations[language].description} {/* Dynamický text */}
+        </p>
+      </div>
     </div>
   );
 };

@@ -1,9 +1,10 @@
-import React, { useContext } from 'react';
+import React, { useContext, useState } from 'react';
 import ChangeLanguage from './ChangeLanguage';
 import { LanguageContext } from './LanguageContext'; // Import LanguageContext
 
 const Navbar = () => {
   const { language } = useContext(LanguageContext); // Získanie aktuálneho jazyka z kontextu
+  const [menuOpen, setMenuOpen] = useState(false); // Stav pre otváranie a zatváranie menu
 
   // Preklady pre podporované jazyky
   const translations = {
@@ -21,13 +22,24 @@ const Navbar = () => {
 
   return (
     <header className="flex items-center justify-between p-4 w-full bg-[#e3f1ff]">
-      {/* Flex kontajner pre zarovnanie h1 na stred */}
+      {/* Logo alebo názov stránky */}
       <div className="flex-1 flex justify-center">
         <h1 className="font-bold font-serif text-sm sm:text-xs md:text-sm">{translations[language].title}</h1>
       </div>
 
-      {/* Pravá strana (navigácia a zmena jazyka) */}
-      <div className="flex space-x-8 items-center">
+      {/* Mobilné menu (hamburger menu) */}
+      <div className="block lg:hidden">
+        <button 
+          className="text-2xl" 
+          onClick={() => setMenuOpen(!menuOpen)} 
+          aria-label="Toggle menu"
+        >
+          ☰
+        </button>
+      </div>
+
+      {/* Navigácia pre desktopové zariadenia */}
+      <div className={`flex-1 flex justify-center items-center space-x-8 md:flex ${menuOpen ? 'block' : 'hidden'} lg:block`}>
         <ol className="flex space-x-8 list-none p-0">
           <li className="text-base sm:text-sm md:text-lg">{translations[language].projects}</li>
           <li className="text-base sm:text-sm md:text-lg">{translations[language].about}</li>
