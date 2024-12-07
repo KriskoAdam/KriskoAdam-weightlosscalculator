@@ -1,0 +1,15 @@
+{
+  "files": {
+    "main.css": "/KriskoAdam-weightlosscalculator/static/css/main.1dbbfe86.css",
+    "main.js": "/KriskoAdam-weightlosscalculator/static/js/main.8d78657f.js",
+    "static/media/male.svg": "/KriskoAdam-weightlosscalculator/static/media/male.78d6cc21496adce74b81cbb7e29378b4.svg",
+    "static/media/female.svg": "/KriskoAdam-weightlosscalculator/static/media/female.5aade2bee4d54c230d22623c23173e4d.svg",
+    "index.html": "/KriskoAdam-weightlosscalculator/index.html",
+    "main.1dbbfe86.css.map": "/KriskoAdam-weightlosscalculator/static/css/main.1dbbfe86.css.map",
+    "main.8d78657f.js.map": "/KriskoAdam-weightlosscalculator/static/js/main.8d78657f.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.1dbbfe86.css",
+    "static/js/main.8d78657f.js"
+  ]
+}
